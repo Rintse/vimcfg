@@ -1,0 +1,7 @@
+#!/bin/bash
+
+CFG_DIR=~/.vim/cfg
+VIMRC=~/.vimrc
+
+cp $CFG_DIR/* ./cfg/
+cp $VIMRC ./vimrc
