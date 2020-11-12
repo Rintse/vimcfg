@@ -1,7 +1,9 @@
 #!/bin/bash
 
-CFG_DIR=~/.vim/cfg
-VIMRC=~/.vimrc
+CFG_DIR=~/.config/nvim/cfg
+INITVIM=~/.config/nvim/init.vim
+COC_CFG=~/.config/nvim/coc-settings.json
 
 cp $CFG_DIR/* ./cfg/
-cp $VIMRC ./vimrc
+cp $INITVIM ./vimrc
+cp $COC_CFG ./coc-settings.json

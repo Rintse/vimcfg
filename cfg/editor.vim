@@ -64,6 +64,9 @@ set undodir=~/.vim/undodir
 " No bell plz
 set belloff=all
 
+" Don't highligh searches by default
+set nohls
+
 " Whitespace after comment
 let g:NERDSpaceDelims = 1
 
@@ -128,6 +131,11 @@ nnoremap <Leader>sb :vertical sb#<CR>
 " Window management
 nnoremap <Leader>m<Left> :call MoveWinLeft()<CR>
 nnoremap <Leader>m<Right> <C-w>x <C-w>l                                                               
+nnoremap <Leader>- <C-w><<CR>
+nnoremap <Leader>= <C-w>><CR>
+
+" Toggle search highlighting 
+:nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
 " Search for selected text
 vnoremap <silent> * :<C-U>

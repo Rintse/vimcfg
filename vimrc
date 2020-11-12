@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype plugin indent on
 
 " ==== BEGIN Vunlde =====
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -10,22 +10,24 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'neoclide/coc.nvim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'arcticicestudio/nord-vim'
-Plugin 'preservim/nerdtree'
 Plugin 'preservim/nerdcommenter'
+Plugin 'preservim/nerdtree'
+Plugin 'junegunn/fzf'
 
 call vundle#end()
-filetype plugin indent on
-filetype plugin on
 " ==== END Vunlde =====
 
 " General editor configuration
-source ~/.vim/cfg/editor.vim
+source ~/.config/nvim/cfg/editor.vim
 
 " NERDTree configuration
-source ~/.vim/cfg/NERDTree.vim
+source ~/.config/nvim/cfg/nerdtree.vim
 
 " Airline configuration 
-source ~/.vim/cfg/airline.vim
+source ~/.config/nvim/cfg/airline.vim
 
 " Coc configuration
-source ~/.vim/cfg/coc.vim
+source ~/.config/nvim/cfg/coc.vim
+
+" FZF configuration 
+source ~/.config/nvim/cfg/fzf.vim
