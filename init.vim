@@ -7,12 +7,14 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'neoclide/coc.nvim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'preservim/nerdcommenter'
-Plugin 'preservim/nerdtree'
 Plugin 'junegunn/fzf'
+Plugin 'preservim/nerdtree'
+
+Plugin 'neoclide/coc.nvim'
+Plugin 'neoclide/coc-python'
 
 call vundle#end()
 " ==== END Vunlde =====
@@ -20,7 +22,7 @@ call vundle#end()
 " General editor configuration
 source ~/.config/nvim/cfg/editor.vim
 
-" NERDTree configuration
+" NERDTree configuration 
 source ~/.config/nvim/cfg/nerdtree.vim
 
 " Airline configuration 

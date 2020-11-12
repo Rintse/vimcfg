@@ -1,5 +1,13 @@
 " Coc configuration
 
+
+" ======= START Configuration =========
+
+let g:fzf_layout = { 'window': { 'width': 0.5, 'height': 0.3 } }
+
+" ======= END Configuration ===========
+
+
 " ======== BEGIN keybinds =============
 "
 " <Tab>: accept coc suggestions

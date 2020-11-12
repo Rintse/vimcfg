@@ -1,5 +1,6 @@
 " Vim editor changes
 
+
 " Write-and-closes current buffer, and switches to the previous
 function! SaveCloseBuffer()
     let cur_buf = (winbufnr(winnr()))
@@ -26,6 +27,7 @@ endfunction
 function! MoveWinLeft()
     execute "normal" winnr()-1 "\<C-w>x" "\<C-w>h"
 endfunction
+
 
 " ======== BEGIN General ==============
 
@@ -56,10 +58,10 @@ endif
 
 " Keep undo history
 set undofile
-set undodir=~/.vim/undodir
+set undodir=~/.config/nvim/undodir
 
 " Prevent swp files from accidentally getting gitted
-:set directory=$HOME/.vim/swapfiles/
+:set directory=~/.config/nvim/swapfiles/
 
 " No bell plz
 set belloff=all

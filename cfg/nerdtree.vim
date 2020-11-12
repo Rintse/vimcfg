@@ -35,9 +35,6 @@ function! SetCWDToFile()
 endfunction
 
 " ======= START Configuration =========
-"
-"Automatically open with vim, and switch to file
-autocmd VimEnter * NERDTree | wincmd p 
 
 " Automatically close vim when tree is the only thing open
 autocmd bufenter * 
@@ -59,9 +56,9 @@ let g:NERDTreeDirArrowCollapsible = ''
 
 " ======== START Binds ================
 
-nnoremap <Leader>f :NERDTreeToggle<CR>
+nnoremap <Leader>t :NERDTreeToggle<CR>
 nnoremap <Leader>rf :NERDTreeRefreshRoot<CR>
 nnoremap <Leader>cd :call SetCWD()<CR>
-nnoremap <Leader>ff :call SetCWDToFile()<CR>
+nnoremap <Leader>cf :call SetCWDToFile()<CR>
 
 " ======== END Binds ==================
