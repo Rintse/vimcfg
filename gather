@@ -1,9 +1,12 @@
 #!/bin/bash
 
-CFG_DIR=~/.config/nvim/cfg
-INITVIM=~/.config/nvim/init.vim
-COC_CFG=~/.config/nvim/coc-settings.json
+# Manually listed to keep track of things
+togather=( \
+~/.config/nvim/init.vim \
+~/.config/nvim/cfg \
+~/.config/nvim/coc-settings.json \
+)
 
-cp $CFG_DIR/* ./cfg/
-cp $INITVIM ./vimrc
-cp $COC_CFG ./coc-settings.json
+for f in ${togather[@]}; do
+    cp -r $f .
+done
