@@ -24,6 +24,8 @@ function! SetCWD()
             execute "cd" selected.str()
             NERDTreeCWD
         endif
+    else
+        call SetCWDToFile()
     endif
 endfunction
 
@@ -56,9 +58,9 @@ let g:NERDTreeDirArrowCollapsible = ''
 
 " ======== START Binds ================
 
-nnoremap <Leader>t :NERDTreeToggle<CR>
-nnoremap <Leader>rf :NERDTreeRefreshRoot<CR>
-nnoremap <Leader>cd :call SetCWD()<CR>
-nnoremap <Leader>cf :call SetCWDToFile()<CR>
+nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
+nnoremap <silent> <Leader>rf :NERDTreeRefreshRoot<CR>
+nnoremap <silent> <Leader>cd :call SetCWD()<CR>
+nnoremap <silent> <Leader>cf :call SetCWDToFile()<CR>
 
 " ======== END Binds ==================

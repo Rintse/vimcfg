@@ -118,7 +118,7 @@ nnoremap <Del> "_x
 vnoremap ! g_
 
 " Saves and closes current buffer
-nnoremap <Leader>q :call SaveCloseBuffer()<CR>
+nnoremap <silent> <Leader>q :call SaveCloseBuffer()<CR>
 
 " search for the current word/selection, while keeping cursor
 nnoremap <Leader>d *N
@@ -131,8 +131,8 @@ nnoremap <Leader>bd :ls<CR>:bd<Space>
 nnoremap <Leader>sb :vertical sb#<CR>
 
 " Window management
-nnoremap <Leader>m<Left> :call MoveWinLeft()<CR>
-nnoremap <Leader>m<Right> <C-w>x <C-w>l                                                               
+nnoremap <silent> <Leader>m<Left> :call MoveWinLeft()<CR>
+nnoremap <silent> <Leader>m<Right> <C-w>x <C-w>l
 nnoremap <Leader>- <C-w><<CR>
 nnoremap <Leader>= <C-w>><CR>
 
