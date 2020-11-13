@@ -12,6 +12,8 @@ Plugin 'arcticicestudio/nord-vim'
 Plugin 'preservim/nerdcommenter'
 Plugin 'junegunn/fzf'
 Plugin 'preservim/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 
 Plugin 'neoclide/coc.nvim'
 Plugin 'neoclide/coc-python'

@@ -92,6 +92,12 @@ inoremap [] []<Left>
 inoremap "" ""<Left>
 inoremap '' ''<Left>
 
+" Line objects
+xnoremap il g_o^
+onoremap il :normal vil<CR>
+xnoremap al $o^
+onoremap al :normal val<CR>
+
 " C specific function open
 inoremap {}<CR> {<CR><CR>}<Up><Tab>
 
