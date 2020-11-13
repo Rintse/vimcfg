@@ -42,6 +42,10 @@ set updatetime=300 "Shorten updatetime for more coc responsiveness
 set wildmode=longest,list
 set wildmenu
 
+" Relative linenumbers except current line 
+set number
+set relativenumber
+
 " Hidden buffers for easy switching
 set hidden
 
