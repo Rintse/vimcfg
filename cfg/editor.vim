@@ -106,8 +106,8 @@ onoremap al :normal val<CR>
 inoremap {}<CR> {<CR><CR>}<Up><Tab>
 
 " Comment selection
-map <Leader>/ <plug>NERDCommenterToggle
-
+map <Leader>/s <plug>NERDCommenterToggle
+map <Leader>/b <plug>NERDCommenterSexy
 " Switch between windows
 nnoremap <Leader><Left> <C-w>h
 nnoremap <Leader><Right> <C-w>l
@@ -137,7 +137,6 @@ vnoremap <Leader>d *N
 " Convenient buffer stuff
 nnoremap <Leader>b :ls<CR>:b<Space>
 nnoremap <Leader>vb :ls<CR>:vertical sb<Space>
-nnoremap <Leader>bd :ls<CR>:bd<Space>
 nnoremap <Leader>sb :vertical sb#<CR>
 
 " Window management

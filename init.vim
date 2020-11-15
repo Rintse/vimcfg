@@ -15,6 +15,9 @@ Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 
+Plugin 'bfrg/vim-cpp-modern'
+Plugin 'uiiaoo/java-syntax.vim'
+
 Plugin 'neoclide/coc.nvim'
 Plugin 'neoclide/coc-python'
 
