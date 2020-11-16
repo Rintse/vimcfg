@@ -3,5 +3,5 @@
 source ./files
 
 for f in ${togather[@]}; do
-    cp -r $nvim_dir$f .
+    cp -r ./$f $nvim_dir
 done
