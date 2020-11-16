@@ -2,7 +2,7 @@
 
 
 " Write-and-closes current buffer, and switches to the previous
-function! SaveCloseBuffer()
+function! CloseBuffer(save)
     let cur_buf = (winbufnr(winnr()))
     if bufname(cur_buf) == ""
         echo "File has no name: can't quick quit"
@@ -15,11 +15,17 @@ function! SaveCloseBuffer()
     let windows = filter(windows, {idx, n -> stridx(n, "NERD_tree") == -1})
     " Available buffers to switch to (not already open) 
     let avail = filter(buffers, {idx, n -> index(windows, n) == -1})
-
+    " Perform writes based on argument
+    let write = ":w \|"
+    let force = ""
+    if !a:save
+        let write = ":"
+        let force = "!"
+    endif
     if(len(avail) > 0)
-        execute ":w \| b " . avail[-1]  ." \| bd" . cur_buf
+        execute write "b " . avail[-1]  ." \| bd" . force . cur_buf
     else
-        execute ":w \| bd"
+        execute write "bd" . force
     endif
 endfunction
 
@@ -106,7 +112,7 @@ onoremap al :normal val<CR>
 inoremap {}<CR> {<CR><CR>}<Up><Tab>
 
 " Comment selection
-map <Leader>/s <plug>NERDCommenterToggle
+map <Leader>/t <plug>NERDCommenterToggle
 map <Leader>/b <plug>NERDCommenterSexy
 " Switch between windows
 nnoremap <Leader><Left> <C-w>h
@@ -128,7 +134,8 @@ nnoremap <Del> "_x
 vnoremap ! g_
 
 " Saves and closes current buffer
-nnoremap <silent> <Leader>q :call SaveCloseBuffer()<CR>
+nnoremap <silent> <Leader>wq :call CloseBuffer(1)<CR>
+nnoremap <silent> <Leader>q! :call CloseBuffer(0)<CR>
 
 " search for the current word/selection, while keeping cursor
 nnoremap <Leader>d *N

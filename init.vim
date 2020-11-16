@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype plugin indent on
 
 " ==== BEGIN Vunlde =====
-set rtp+=~/.config/nvim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
