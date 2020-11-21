@@ -3,8 +3,6 @@
 
 " ======= START Configuration =========
 
-let g:fzf_layout = { 'window': { 'width': 0.5, 'height': 0.3 } }
-
 " ======= END Configuration ===========
 
 
@@ -12,6 +10,8 @@ let g:fzf_layout = { 'window': { 'width': 0.5, 'height': 0.3 } }
 "
 " <Tab>: accept coc suggestions
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-Y>" : "\<Tab>"
+" Prevent enter from completing with the pum open
+inoremap <silent><expr> <CR> pumvisible() ? "\<C-p><CR>" : "\<CR>"
 
 " Language server gotos
 nmap <silent> <Leader>gd <Plug>(coc-definition)

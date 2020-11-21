@@ -11,7 +11,7 @@ let g:fzf_layout = { 'window': { 'width': 0.5, 'height': 0.3 } }
 
 " ======= START Keybinds ==============
 
-let g:fzf_action = { 's': 'vsplit' }
+let g:fzf_action = { 'ctrl-s': 'vsplit' }
 nnoremap <silent> <Leader>fz :FZF<CR>
 nnoremap <silent> <Leader>hfz :FZF ~<CR> 
 
