@@ -4,8 +4,8 @@
 " Write-and-closes current buffer, and switches to the previous
 function! CloseBuffer(save)
     let cur_buf = (winbufnr(winnr()))
-    if bufname(cur_buf) == ""
-        echo "File has no name: can't quick quit"
+    if a:save && bufname(cur_buf) == ""
+        echo "File has no name: can't save and quit"
         return
     endif
     
@@ -94,26 +94,16 @@ let mapleader = " "
 nmap <F1> <Nop>
 imap <F1> <Nop>
 
-" Place cursor in between braces and such when two are typed
-inoremap <> <><Left>
-inoremap () ()<Left>
-inoremap {} {}<Left>
-inoremap [] []<Left>
-inoremap "" ""<Left>
-inoremap '' ''<Left>
-
 " Line objects
 xnoremap il g_o^
 onoremap il :normal vil<CR>
 xnoremap al $o^
 onoremap al :normal val<CR>
 
-" C specific function open
-inoremap {}<CR> {<CR><CR>}<Up><Tab>
-
 " Comment selection
 map <Leader>/t <plug>NERDCommenterToggle
 map <Leader>/b <plug>NERDCommenterSexy
+
 " Switch between windows
 nnoremap <Leader><Left> <C-w>h
 nnoremap <Leader><Right> <C-w>l
@@ -122,6 +112,9 @@ nnoremap <Leader><Right> <C-w>l
 " (un)indent selection
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+" Regular indentation with tab 
+nnoremap <Tab> >
+nnoremap <S-Tab> <
 
 " Navigate errors 
 nnoremap <Leader>ne :call CocAction('diagnosticNext')<CR>

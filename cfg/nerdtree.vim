@@ -59,7 +59,7 @@ let g:NERDTreeDirArrowCollapsible = ''
 " ======== START Binds ================
 
 nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
-nnoremap <silent> <Leader>rf :NERDTreeRefreshRoot<CR>
+nnoremap <silent> <Leader>rt :NERDTreeRefreshRoot<CR>
 nnoremap <silent> <Leader>cd :call SetCWD()<CR>
 nnoremap <silent> <Leader>cf :call SetCWDToFile()<CR>
 
