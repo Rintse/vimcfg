@@ -38,13 +38,6 @@ endfunction
 
 " ======= START Configuration =========
 
-" Automatically close vim when tree is the only thing open
-autocmd bufenter * 
-    \if (winnr("$") == 1 && 
-    \exists("b:NERDTree") && 
-    \b:NERDTree.isTabTree()) 
-    \| q | endif
-
 " Shows the file/folder name in statusbar
 let NERDTreeStatusline="%{GetNERDTreeFileName()}"
 

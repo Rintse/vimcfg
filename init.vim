@@ -15,7 +15,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 
-Plugin 'bfrg/vim-cpp-modern'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'uiiaoo/java-syntax.vim'
 
 Plugin 'neoclide/coc.nvim'

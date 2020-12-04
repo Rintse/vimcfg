@@ -4,6 +4,9 @@
 " Write-and-closes current buffer, and switches to the previous
 function! CloseBuffer(save)
     let cur_buf = (winbufnr(winnr()))
+    if(stridx(bufname(cur_buf), "NERD_tree") != -1)
+        return " Dont do anything if in tree
+    endif
     if a:save && bufname(cur_buf) == ""
         echo "File has no name: can't save and quit"
         return
@@ -89,6 +92,10 @@ let g:NERDSpaceDelims = 1
 
 nnoremap <Space> <Nop>
 let mapleader = " "
+
+" Place cursor in between brackets
+inoremap "" ""<Left>
+inoremap '' ''<Left>
 
 " I hate f1
 nmap <F1> <Nop>
