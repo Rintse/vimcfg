@@ -45,7 +45,6 @@ let NERDTreeStatusline="%{GetNERDTreeFileName()}"
 let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
 
-
 " ======== END Configuration ==========
 
 

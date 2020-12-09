@@ -139,8 +139,6 @@ nnoremap <Leader>d *N
 vnoremap <Leader>d *N
 
 " Convenient buffer stuff
-nnoremap <Leader>b :ls<CR>:b<Space>
-nnoremap <Leader>vb :ls<CR>:vertical sb<Space>
 nnoremap <Leader>sb :vertical sb#<CR>
 
 " Window management

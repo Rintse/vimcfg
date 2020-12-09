@@ -10,9 +10,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'preservim/nerdcommenter'
+
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'preservim/nerdtree'
+
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 
@@ -39,3 +42,6 @@ source ~/.config/nvim/cfg/coc.vim
 
 " FZF configuration 
 source ~/.config/nvim/cfg/fzf.vim
+
+" Buffergator configuration
+source ~/.config/nvim/cfg/buffergator.vim
