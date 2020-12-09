@@ -130,9 +130,6 @@ nnoremap <Leader>pe :call CocAction('diagnosticPrevious')<CR>
 " Delete into the black hole register
 nnoremap <Del> "_x
 
-" To end of line, excl newline
-vnoremap ! g_
-
 " Saves and closes current buffer
 nnoremap <silent> <Leader>wq :call CloseBuffer(1)<CR>
 nnoremap <silent> <Leader>q! :call CloseBuffer(0)<CR>
