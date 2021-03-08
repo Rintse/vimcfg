@@ -93,6 +93,10 @@ let g:NERDSpaceDelims = 1
 nnoremap <Space> <Nop>
 let mapleader = " "
 
+" Swap colon and semicolon
+noremap ; :
+noremap : ;
+
 " Place cursor in between brackets
 inoremap "" ""<Left>
 inoremap '' ''<Left>
@@ -110,11 +114,6 @@ onoremap al :normal val<CR>
 " Comment selection
 map <Leader>/t <plug>NERDCommenterToggle
 map <Leader>/b <plug>NERDCommenterSexy
-
-" Switch between windows
-nnoremap <Leader><Left> <C-w>h
-nnoremap <Leader><Right> <C-w>l
-" nnoremap <Leader>1 :call ToWindow(1)
 
 " (un)indent selection
 vmap <Tab> >gv

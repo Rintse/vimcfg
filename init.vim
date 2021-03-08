@@ -20,6 +20,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'RRethy/vim-illuminate'
 Plugin 'uiiaoo/java-syntax.vim'
 
 Plugin 'neoclide/coc.nvim'
