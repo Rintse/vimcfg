@@ -85,6 +85,9 @@ set nohls
 " Whitespace after comment
 let g:NERDSpaceDelims = 1
 
+" Latex files should be hard limited at 80 chars
+au FileType tex set tw=80 wm=2
+
 " ======== END General ================
 
 
@@ -92,6 +95,7 @@ let g:NERDSpaceDelims = 1
 
 nnoremap <Space> <Nop>
 let mapleader = " "
+let localleader = "\\"
 
 " Swap colon and semicolon
 noremap ; :

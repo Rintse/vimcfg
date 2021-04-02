@@ -1,5 +1,12 @@
 " Coc configuration
 
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 " ======= START Configuration =========
 
@@ -29,6 +36,8 @@ nmap <silent> <Leader>vgd :vsplit<CR><Plug>(coc-definition)
 
 nmap <silent> <Leader>gt <Plug>(coc-type-definition)
 nmap <silent> <Leader>vgt :vsplit<CR><Plug>(coc-type-definition)
+
+nnoremap <silent> <Leader>i :call <SID>show_documentation()<CR>
 
 nmap <silent> <Leader>gr <Plug>(coc-references)
 

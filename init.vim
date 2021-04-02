@@ -21,10 +21,11 @@ Plugin 'tpope/vim-repeat'
 
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'RRethy/vim-illuminate'
-Plugin 'uiiaoo/java-syntax.vim'
 
 Plugin 'neoclide/coc.nvim'
 Plugin 'neoclide/coc-python'
+Plugin 'lervag/vimtex'
+Plugin 'mhinz/neovim-remote'
 
 call vundle#end()
 " ==== END Vunlde =====
@@ -46,3 +47,6 @@ source ~/.config/nvim/cfg/fzf.vim
 
 " Buffergator configuration
 source ~/.config/nvim/cfg/buffergator.vim
+
+" Latex plugins
+source ~/.config/nvim/cfg/latex.vim
