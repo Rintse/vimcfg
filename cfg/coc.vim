@@ -22,23 +22,23 @@ inoremap <silent><expr> <CR> pumvisible() ? "\<C-p><CR>" : "\<CR>"
 nnoremap <silent> <Leader>cr :CocRestart<CR> 
 
 " Accept hint
-nmap <leader>a <Plug>(coc-codeaction-selected)<CR>
+nnoremap <leader>a <Plug>(coc-codeaction-selected)<CR>
 
 " Rename variable 
-nmap <silent> <Leader>rn <Plug>(coc-rename)
+nnoremap <silent> <Leader>rn <Plug>(coc-rename)
 
 " Language server gotos
-nmap <silent> <Leader>gi <Plug>(coc-implementation)
-nmap <silent> <Leader>vgi :vsplit<CR><Plug>(coc-implementation)
+nnoremap <silent> <Leader>gi <Plug>(coc-implementation)
+nnoremap <silent> <Leader>vgi :call CocAction('jumpImplementation', 'vsplit')<CR>
 
-nmap <silent> <Leader>gd <Plug>(coc-definition)
-nmap <silent> <Leader>vgd :vsplit<CR><Plug>(coc-definition)
+nnoremap <silent> <Leader>gd <Plug>(coc-definition)
+nnoremap <silent> <Leader>vgt :call CocAction('jumpDefinition', 'vsplit')<CR>
 
-nmap <silent> <Leader>gt <Plug>(coc-type-definition)
-nmap <silent> <Leader>vgt :vsplit<CR><Plug>(coc-type-definition)
+nnoremap <silent> <Leader>gt <Plug>(coc-type-definition)
+nnoremap <silent> <Leader>vgt :call CocAction('jumpTypeDefinition', 'vsplit')<CR>
 
 nnoremap <silent> <Leader>i :call <SID>show_documentation()<CR>
 
-nmap <silent> <Leader>gr <Plug>(coc-references)
+nnoremap <silent> <Leader>gr <Plug>(coc-references)
 
 " ======== END keybinds ===============
