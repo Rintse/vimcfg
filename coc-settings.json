@@ -2,10 +2,13 @@
     "suggest.noselect": false,
 
     "languageserver": {
-        "digestif": {
-            "command": "digestif",
-            "filetypes": ["tex", "plaintex", "context"]
+
+        "latex": {
+            "command": "texlab",
+            "ignoredRootPaths": ["~"],
+            "filetypes": ["tex", "bib", "plaintex", "context"]
         },
+
         "haskell": {
             "command": "haskell-language-server-wrapper",
             "args": ["--lsp"],

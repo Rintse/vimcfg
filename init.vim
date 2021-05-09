@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'mhinz/neovim-remote'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'arcticicestudio/nord-vim'
@@ -23,9 +24,10 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'RRethy/vim-illuminate'
 
 Plugin 'neoclide/coc.nvim'
-Plugin 'neoclide/coc-python'
+Plugin 'clangd/coc-clangd'
 Plugin 'lervag/vimtex'
-Plugin 'mhinz/neovim-remote'
+Plugin 'neoclide/coc-json'
+Plugin 'fannheyward/coc-pyright'
 
 call vundle#end()
 " ==== END Vunlde =====

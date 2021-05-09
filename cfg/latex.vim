@@ -12,3 +12,12 @@ endif
 let g:vimtex_quickfix_ignore_filters = [
           \ 'Underfull \\hbox' ]
 
+" Latex files should be hard limited at 80 chars
+au FileType tex set tw=80 wm=2
+
+" Completion is done by the language server
+let g:vimtex_complete_enabled=1
+let g:vimtex_complete_close_braces=1
+" Auto indentation is annoying
+let g:vimtex_indent_enabled=0
+

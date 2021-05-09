@@ -1,6 +1,5 @@
 " Vim editor changes
 
-
 " Write-and-closes current buffer, and switches to the previous
 function! CloseBuffer(save)
     let cur_buf = (winbufnr(winnr()))
@@ -85,9 +84,6 @@ set nohls
 " Whitespace after comment
 let g:NERDSpaceDelims = 1
 
-" Latex files should be hard limited at 80 chars
-au FileType tex set tw=80 wm=2
-
 " ======== END General ================
 
 
@@ -97,6 +93,9 @@ nnoremap <Space> <Nop>
 let mapleader = " "
 let localleader = "\\"
 
+" Easy black hole reg
+nnoremap - "_
+
 " Swap colon and semicolon
 noremap ; :
 noremap : ;
@@ -104,6 +103,9 @@ noremap : ;
 " Place cursor in between brackets
 inoremap "" ""<Left>
 inoremap '' ''<Left>
+inoremap () ()<Left>
+inoremap {} {}<Left>
+inoremap [] []<Left>
 
 " I hate f1
 nmap <F1> <Nop>
