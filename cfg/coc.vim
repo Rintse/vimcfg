@@ -22,19 +22,19 @@ inoremap <silent><expr> <CR> pumvisible() ? "\<C-p><CR>" : "\<CR>"
 nnoremap <silent> <Leader>cr :CocRestart<CR> 
 
 " Accept hint
-nnoremap <leader>a <Plug>(coc-codeaction-selected)<CR>
+nnoremap <Leader>a :call CocAction('codeAction', 'cursor')<CR>
 
 " Rename variable 
 nnoremap <silent> <Leader>rn <Plug>(coc-rename)
 
 " Language server gotos
-nnoremap <silent> <Leader>gi <Plug>(coc-implementation)
+nnoremap <silent> <Leader>gi :call CocAction('jumpImplementation')<CR>
 nnoremap <silent> <Leader>vgi :call CocAction('jumpImplementation', 'vsplit')<CR>
 
-nnoremap <silent> <Leader>gd <Plug>(coc-definition)
+nnoremap <silent> <Leader>gd :call CocAction('jumpDefinition')<CR>
 nnoremap <silent> <Leader>vgt :call CocAction('jumpDefinition', 'vsplit')<CR>
 
-nnoremap <silent> <Leader>gt <Plug>(coc-type-definition)
+nnoremap <silent> <Leader>gt :call CocAction('jumpTypeDefinition')<CR>
 nnoremap <silent> <Leader>vgt :call CocAction('jumpTypeDefinition', 'vsplit')<CR>
 
 nnoremap <silent> <Leader>i :call <SID>show_documentation()<CR>
