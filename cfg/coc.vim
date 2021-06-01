@@ -32,7 +32,7 @@ nnoremap <silent> <Leader>gi :call CocAction('jumpImplementation')<CR>
 nnoremap <silent> <Leader>vgi :call CocAction('jumpImplementation', 'vsplit')<CR>
 
 nnoremap <silent> <Leader>gd :call CocAction('jumpDefinition')<CR>
-nnoremap <silent> <Leader>vgt :call CocAction('jumpDefinition', 'vsplit')<CR>
+nnoremap <silent> <Leader>vgd :call CocAction('jumpDefinition', 'vsplit')<CR>
 
 nnoremap <silent> <Leader>gt :call CocAction('jumpTypeDefinition')<CR>
 nnoremap <silent> <Leader>vgt :call CocAction('jumpTypeDefinition', 'vsplit')<CR>
