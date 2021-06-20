@@ -78,11 +78,16 @@ set undodir=~/.config/nvim/undodir
 " No bell plz
 set belloff=all
 
-" Don't highligh searches by default
+" Don't highlight searches by default
 set nohls
 
 " Whitespace after comment
 let g:NERDSpaceDelims = 1
+
+" Toggle spellingcheck for text documents
+set spelllang=en_gb 
+nnoremap <Leader>sc :set spell!<CR>
+set spellsuggest+=10
 
 " ======== END General ================
 
