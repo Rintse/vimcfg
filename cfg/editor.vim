@@ -88,6 +88,7 @@ let g:NERDSpaceDelims = 1
 set spelllang=en_gb 
 nnoremap <Leader>sc :set spell!<CR>
 set spellsuggest+=10
+set nojoinspaces
 
 " ======== END General ================
 
